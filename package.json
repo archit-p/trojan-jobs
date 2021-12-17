@@ -13,7 +13,8 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "deploy:ci": "gatsby build && gh-pages -d public -r https://$GH_TOKEN@github.com/archit-p/trojan-jobs"
+    "deploy": "gatsby build && gh-pages -d public",
+    "deploy:ci": "gatsby build && gh-pages -d public -r https://$GH_TOKEN@github.com/archit-p/trojan-jobs.git"
   },
   "dependencies": {
     "gatsby": "^4.4.0",
