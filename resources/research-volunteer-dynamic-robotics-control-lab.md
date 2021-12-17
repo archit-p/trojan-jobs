@@ -6,3 +6,9 @@ tags:
   - Unpaid
   - Research
 ---
+
+We are looking for self-motivated students to do research volunteer on control, planning, and deep reinforcement learning for legged robots.
+
+More information about our research can be found at https://sites.usc.edu/quann/.
+
+Students who are interested in joining our research can submit their applications via this form: https://forms.gle/LbFwSVjKNV1uKL3Y8

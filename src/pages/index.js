@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { Helmet } from "react-helmet";
 import Ruler from "../components/Ruler";
-import { useStaticQuery, graphql } from "gatsby";
+import { useStaticQuery, graphql, Link } from "gatsby";
+import Footer from "../components/Footer";
 
 function Index() {
   let {
@@ -15,6 +16,9 @@ function Index() {
             employer
             postedAt(fromNow: true)
             tags
+          }
+          fields {
+            slug
           }
         }
       }
@@ -97,7 +101,9 @@ function Index() {
         {filteredJobs.map((job) => (
           <>
             <article className="py-3">
-              <h2>{job.frontmatter.title}</h2>
+              <Link to={job.fields.slug}>
+                <h2>{job.frontmatter.title}</h2>
+              </Link>
               <div role="doc-subtitle" className="text-gray-600 font-light">
                 {job.frontmatter.employer}
               </div>
@@ -114,12 +120,7 @@ function Index() {
             <Ruler />
           </>
         ))}
-        <footer className="py-3 text-sm text-gray-600 font-light">
-          Want to post a job? Email{" "}
-          <a className="underline" href="mailto://contact@trojanjobs.xyz">
-            contact@trojanjobs.xyz
-          </a>
-        </footer>
+        <Footer />
       </div>
     </>
   );
