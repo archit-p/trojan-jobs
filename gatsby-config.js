@@ -1,16 +1,17 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
+    siteUrl: "https://trojanjobs.xyz",
     title: "trojan-jobs",
   },
   plugins: [
+    "gatsby-plugin-postcss",
     "gatsby-plugin-react-helmet",
     "gatsby-transformer-remark",
     {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "pages",
-        path: "./src/pages/",
+        path: `${__dirname}/resources`,
       },
       __key: "pages",
     },
