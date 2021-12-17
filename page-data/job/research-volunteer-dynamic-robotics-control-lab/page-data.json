@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-job-posting-js",
+    "path": "/job/research-volunteer-dynamic-robotics-control-lab/",
+    "result": {"data":{"markdownRemark":{"html":"<p>We are looking for self-motivated students to do research volunteer on control, planning, and deep reinforcement learning for legged robots.</p>\n<p>More information about our research can be found at <a href=\"https://sites.usc.edu/quann/\">https://sites.usc.edu/quann/</a>.</p>\n<p>Students who are interested in joining our research can submit their applications via this form: <a href=\"https://forms.gle/LbFwSVjKNV1uKL3Y8\">https://forms.gle/LbFwSVjKNV1uKL3Y8</a></p>","frontmatter":{"title":"Research Volunteer","employer":"Dynamic Robotics and Control Lab","postedAt":"8 hours ago","tags":["Unpaid","Research"]}}},"pageContext":{"slug":"/job/research-volunteer-dynamic-robotics-control-lab/"}},
+    "staticQueryHashes": []}
