@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { Helmet } from "react-helmet";
-import Ruler from "../components/Ruler";
 import { useStaticQuery, graphql, Link } from "gatsby";
-import Footer from "../components/Footer";
 import Favicon from "../images/favicon.png";
 
 function Index() {
@@ -69,23 +67,38 @@ function Index() {
         <title>Trojan Jobs - Find On-Campus Jobs</title>
         <link rel="icon" type="image/x-icon" href={Favicon}></link>
       </Helmet>
-      <div className="max-w-2xl mx-auto px-2">
-        <header className="py-3">
-          <h1 className="text-lg font-semibold">Trojan Jobs 👩‍💻👨‍💼👩‍🔬</h1>
-          <div role="doc-subtitle" className="text-gray-600">
-            Find on-campus jobs at USC
+      <header className="py-3 bg-white">
+        <div className="max-w-3xl mx-auto px-3 flex flex-row">
+          <div>
+            <h1 className="text-lg font-semibold">Trojan Jobs 👩‍💻👨‍💼👩‍🔬</h1>
+            <div role="doc-subtitle" className="text-gray-600">
+              Find on-campus jobs at USC
+            </div>
           </div>
+          <div className="ml-auto flex flex-col justify-center">
+            <a
+              className="bg-red-800 rounded-md shadow-sm py-2 px-4 text-white"
+              href="mailto:architpa@usc.edu"
+            >
+              Post a Job
+            </a>
+          </div>
+        </div>
+      </header>
+      <main className="bg-slate-50 py-3 min-h-screen">
+        <div className="max-w-3xl mx-auto px-3">
           <section className="mt-2">
             <div>
               <input
                 type="text"
-                className="w-full border rounded-md border-gray-300 p-2 font-light"
+                className="w-full border-2 rounded-md border-gray-200 p-2 font-light"
                 placeholder="Search..."
                 onChange={(e) => searchJobs(e.target.value)}
               />
             </div>
             <div className="mt-2">
               <input
+                className="rounded-md border-gray-200"
                 type="checkbox"
                 id="paid-checkbox"
                 onChange={(e) => togglePaidOnly(e.target.checked)}
@@ -98,32 +111,32 @@ function Index() {
               </label>
             </div>
           </section>
-        </header>
-        <Ruler />
-        {filteredJobs.map((job) => (
-          <>
-            <article className="py-3">
+          {filteredJobs.map((job) => (
+            <>
               <Link to={job.fields.slug}>
-                <h2 className="text-lg font-medium">{job.frontmatter.title}</h2>
+                <article className="p-3 bg-white mt-3 rounded-md shadow-sm">
+                  <h2 className="text-lg font-medium">
+                    {job.frontmatter.title}
+                  </h2>
+
+                  <div role="doc-subtitle" className="text-gray-600">
+                    {job.frontmatter.employer}
+                  </div>
+                  <footer className="text-gray-600 text-sm capitalize mt-2 font-light">
+                    <time>{job.frontmatter.postedAt}</time>
+                    {job.frontmatter.tags.map((tag) => (
+                      <>
+                        <span className="ml-2">•</span>
+                        <span className="ml-2">{tag}</span>
+                      </>
+                    ))}
+                  </footer>
+                </article>
               </Link>
-              <div role="doc-subtitle" className="text-gray-600">
-                {job.frontmatter.employer}
-              </div>
-              <footer className="text-gray-600 text-sm capitalize mt-2 font-light">
-                <time>{job.frontmatter.postedAt}</time>
-                {job.frontmatter.tags.map((tag) => (
-                  <>
-                    <span className="ml-2">•</span>
-                    <span className="ml-2">{tag}</span>
-                  </>
-                ))}
-              </footer>
-            </article>
-            <Ruler />
-          </>
-        ))}
-        <Footer />
-      </div>
+            </>
+          ))}
+        </div>
+      </main>
     </>
   );
 }
