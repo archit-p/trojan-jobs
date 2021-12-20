@@ -104,9 +104,9 @@ function Index() {
           <>
             <article className="py-3">
               <Link to={job.fields.slug}>
-                <h2>{job.frontmatter.title}</h2>
+                <h2 className="text-lg font-medium">{job.frontmatter.title}</h2>
               </Link>
-              <div role="doc-subtitle" className="text-gray-600 font-light">
+              <div role="doc-subtitle" className="text-gray-600">
                 {job.frontmatter.employer}
               </div>
               <footer className="text-gray-600 text-sm capitalize mt-2 font-light">

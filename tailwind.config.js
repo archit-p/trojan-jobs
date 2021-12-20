@@ -5,13 +5,13 @@ module.exports = {
       typography: {
         DEFAULT: {
           css: {
-            fontSize: "0.875rem",
+            fontSize: "1rem",
             fontWeight: 300,
             p: {
               marginBottom: "0.5rem",
             },
             h2: {
-              fontSize: "1rem",
+              fontSize: "1.125rem",
               lineHeight: "1.5rem",
               fontWeight: 400,
               marginTop: "0.5rem",

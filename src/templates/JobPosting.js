@@ -21,8 +21,8 @@ function JobPosting({ data: { markdownRemark: context } }) {
         </header>
         <Ruler />
         <article className="py-3">
-          <h2>{context.frontmatter.title}</h2>
-          <div role="doc-subtitle" className="text-gray-600 font-light">
+          <h2 className="text-lg font-medium">{context.frontmatter.title}</h2>
+          <div role="doc-subtitle" className="text-gray-600">
             {context.frontmatter.employer}
           </div>
           <footer className="text-gray-600 text-sm capitalize mt-2 font-light">
