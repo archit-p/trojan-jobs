@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 import Ruler from "../components/Ruler";
 import { useStaticQuery, graphql, Link } from "gatsby";
 import Footer from "../components/Footer";
+import Favicon from "../images/favicon.png";
 
 function Index() {
   let {
@@ -66,6 +67,7 @@ function Index() {
     <>
       <Helmet>
         <title>Trojan Jobs - Find On-Campus Jobs</title>
+        <link rel="icon" type="image/x-icon" href={Favicon}></link>
       </Helmet>
       <div className="max-w-2xl mx-auto px-2">
         <header className="py-3">

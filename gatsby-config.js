@@ -6,6 +6,7 @@ module.exports = {
   plugins: [
     "gatsby-plugin-postcss",
     "gatsby-plugin-modal-routing-3",
+    "gatsby-plugin-sharp",
     "gatsby-plugin-react-helmet",
     "gatsby-transformer-remark",
     {
