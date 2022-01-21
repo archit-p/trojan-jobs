@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-job-posting-js",
+    "path": "/job/ta-grader-cs281/",
+    "result": {"data":{"markdownRemark":{"html":"<p>TA or grader needed for CSCI 281: Pipelines for Games - please contact Scott Easley at <a href=\"mailto:seasley@usc.edu\">seasley@usc.edu</a>.</p>\n<p>You must have proficiency in the 3d software Maya and be available for both time slots of the class Monday and Wednesday, 10:00 am to 11:50 am.</p>\n<p><a href=\"https://classes.usc.edu/term-20221/course/csci-281/\">https://classes.usc.edu/term-20221/course/csci-281/</a></p>","frontmatter":{"title":"Teaching Assistant for CSCI281","employer":"Prof. Scott Easley","postedAt":"16 days ago","tags":["Paid","Teaching Assistantship"]}}},"pageContext":{"slug":"/job/ta-grader-cs281/"}},
+    "staticQueryHashes": []}

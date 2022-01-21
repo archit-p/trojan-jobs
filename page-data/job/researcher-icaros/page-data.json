@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-job-posting-js",
+    "path": "/job/researcher-icaros/",
+    "result": {"data":{"markdownRemark":{"html":"<p>I am a third-year PhD student in Stefanos Nikolaidis's ICAROS lab. We were looking for graduate (or experienced undergraduate) students to work on a research project in our lab.</p>\n<p>Application form: <a href=\"https://forms.gle/p866RQZGUmfJbjHWA\">https://forms.gle/p866RQZGUmfJbjHWA</a></p>","frontmatter":{"title":"Student Researcher","employer":"Interactive and Collaborative Autonomous Robotics (ICAROS) lab","postedAt":"10 days ago","tags":["Paid","Research"]}}},"pageContext":{"slug":"/job/researcher-icaros/"}},
+    "staticQueryHashes": []}
